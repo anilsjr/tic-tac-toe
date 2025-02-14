@@ -1,0 +1,37 @@
+body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        color: #eee;
+}
+
+.container {
+        text-align: center;
+}
+
+.board {
+        display: grid;
+        grid-template-columns: repeat(3, 90px);
+        grid-gap: 5px;
+        background-color: #fff;
+
+}
+
+
+.box {
+        width: 90px;
+        height: 90px;
+        background-color: #000;
+        text-align: center;
+        line-height: 0px;
+        font-size: 4rem;
+        cursor: pointer;
+        color: white;
+}
+
+.box.disabled {
+        pointer-events: none;
+        /* border:2px solid white; */
+}
